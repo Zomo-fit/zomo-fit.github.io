@@ -22,8 +22,17 @@
 
     <base href="/">
 
-    <!-- Global site tag (gtag.js) - Google Ads: 792975669 -->
+    <!-- Global site tag (gtag.js) -->
     
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165274437-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165274437-1');
+</script>
 
     <!-- Event snippet for iOS - Download Button Clicked conversion -->
     
@@ -31,13 +40,40 @@
     <!-- Event snippet for Android - Download Button Clicked conversion page -->
     
     <!-- Facebook Pixel Code -->
-    
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1383314162006178');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1383314162006178&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     
     <!-- End Facebook Pixel Code -->
 
     
-
-   
+<!-- Hotjar Tracking Code for zomo.fit -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2485114,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    
+   <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WCXCRNL"></script>
 </head>
 
 <body>
@@ -58,16 +94,14 @@
 
             <div class="fullwidth hero__left-side" layout="column" layout-align="start start"
                 layout-align-md="start center">
-                <h1 class="hero__title">Run Beautiful Live Fitness Class With Your Phone</h1>
-                <p class="hero__subtitle">This will solve all your fitness studio problems
-                    <br />
-                    <br />Payments , Community, Subscriptions, Livestreaming</p>
+                <h1 class="hero__title">Train your clients, anywhere. Anytime.</h1>
+                <p class="hero__subtitle">Build your tribe and run your business with one simple to use, issue-free  livestreaming fitness app</p>
 
                 <div class="fullwidth hero__div" layout="column" layout-align="start start"
                     layout-align-md="start center" name="signupForm">
 
                     <div fullwidth layout="row" layout-md="column" layout-align="start center">
-                        <a href="https://apps.apple.com/us/app/zomo-fit-creator/id1513006436"
+                        <a href="https://apps.apple.com/us/app/zomo-fit-creator/id1513006436?utm_source=LandingPage"
                             class="hero__download-now" onclick="return clickedAppleDownload();">
                             <div class="hero__download-btn-wrapper">
                                 <div class="hero__download-btn-shadow"></div>
@@ -76,7 +110,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.zomo_fit"
+                        <a href="https://play.google.com/store/apps/details?id=com.zomo_fit?utm_source=LandingPage"
                             class="hero__download-now" onclick="return clickedAndroidDownload();">
                             <div class="hero__download-btn-wrapper">
                                 <div class="hero__download-btn-shadow"></div>
@@ -101,8 +135,8 @@
         <div class="reflectly__inner" layout="row" layout-sm="column" layout-align="start start"
             layout-align-sm="start center">
             <a class="footer__text hide--large hide--medium" href="mailto:hello@zomo.fit">hello@zomo.fit</a>
-            <a class="footer__text  hide--large hide--medium" href="assets/privacy-policy.pdf">privacy policy</a>
-            <a class="footer__text  hide--large hide--medium" href="assets/terms-of-service.pdf">terms of
+            <a class="footer__text  hide--large hide--medium" href="https://zomo.fit/privacy">privacy policy</a>
+            <a class="footer__text  hide--large hide--medium" href="https://zomo.fit/privacy">terms of
                 service</a>
 
             <div class="fullwidth" layout="column" layout-align="start start" layout-align-sm="start center">
@@ -117,31 +151,44 @@
             
         </div>
     </section>
+    
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101174251525546");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <script>
         function clickedAppleDownload() {
-            /* 
-            fbq('track', 'CompleteRegistration', {
-                content_name: "Reflectly iOS",
-                value: 0,
-                currency: "DKK"
-            });
-
-            // Download link click is tracked as "signup" in Snapchat
-            snaptr('track', 'SIGN_UP');
-            return gtag_report_conversion_ios('https://itunes.apple.com/us/app/reflectly-mindfulness-journal/id1241229134');*/
+           
         }
         function clickedAndroidDownload() {
-            /*
-            fbq('track', 'CompleteRegistration', {
-                content_name: "Reflectly Android",
-                value: 0,
-                currency: "DKK"
-            });
-
-            // Download link click is tracked as "signup" in Snapchat
-            snaptr('track', 'SIGN_UP');
-            return gtag_report_conversion_android('https://play.google.com/store/apps/details?id=com.reflectlyApp'); */
+           
         }
     </script>
 
