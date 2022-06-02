@@ -9,6 +9,13 @@
     <meta name="Description"
         content="ZOMO.fit - The all in one platform for Fitness Creators">
     <link rel="icon" href="https://zomo-fit.github.io/assets/favicon.png" type="image/png">
+    
+<meta property="og:title" content=ZOMO.fit - App for Fitness Creators>
+<meta property="og:site_name" content=ZOMO.fit>
+<meta property="og:url" content=https://zomo.fit>
+<meta property="og:description" content=Business in a box platform for fitness professionals>
+<meta property="og:type" content=website>
+<meta property="og:image" content=https://zomo-fit.github.io/assets/screens.png>
 
     <title>ZOMO.fit</title>
 
@@ -74,9 +81,54 @@ src="https://www.facebook.com/tr?id=1383314162006178&ev=PageView&noscript=1"
 </script>
     
    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WCXCRNL"></script>
+    
+    <style>
+        #note {
+    position: absolute;
+    font-family: "Poppins";
+            font-size: 1.5em;
+            padding-top: 5px;
+    z-index: 101;
+    height: 32px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #D2F990;
+    text-align: center;
+    overflow: hidden; 
+         
+             /*
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+           
+    -webkit-transform: translateY(-50px);
+    -webkit-animation: slideDown 2s linear 0.5s 1 normal forwards;
+    -moz-transform:    translateY(-50px);
+    -moz-animation:    slideDown 2s linear 0.5s 1 normal forwards; */
+}
+        /*
+        @-webkit-keyframes slideDown {
+    0%, 100% { -webkit-transform: translateY(-50px); }
+    10%, 90% { -webkit-transform: translateY(0px); }
+}
+@-moz-keyframes slideDown {
+    0%, 100% { -moz-transform: translateY(-50px); }
+    10%, 90% { -moz-transform: translateY(0px); }
+}
+      */  
+        
+    </style>
 </head>
 
 <body>
+    
+    <div id="note">
+        Invest in ZOMO.fit - <a href="https://www.wefunder.com/zomo">Click here to learn more</a>
+        <!--
+        <a id="close_note">[close]</a>
+    -->
+</div>
 
     <!-- HERO SECTION -->
     <div class="fullwidth hero" id="hero" layout="row" layout-align="center center">
@@ -190,6 +242,12 @@ src="https://www.facebook.com/tr?id=1383314162006178&ev=PageView&noscript=1"
         function clickedAndroidDownload() {
            
         }
+        
+        close = document.getElementById("close_note");
+ close.addEventListener('click', function() {
+   note = document.getElementById("note");
+   note.style.display = 'none';
+ }, false);
     </script>
 
 </body>
