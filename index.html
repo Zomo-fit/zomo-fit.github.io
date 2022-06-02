@@ -238,23 +238,28 @@ src="https://www.facebook.com/tr?id=1383314162006178&ev=PageView&noscript=1"
     <script>
         function clickedAppleDownload(e) {
             //e.preventDefault();
-           ga('send', 'event', 'UI', 'SignupFormSubmitted');
-            ga('send', 'event', 'UI', 'iOSClicked');
+           gtag('event', 'SignupFormSubmitted', {'event_category' : 'UI',
+  'event_label' : 'SignupFormSubmitted'});
+            gtag('event', 'iOSClicked', {'event_category' : 'UI',
+  'event_label' : 'iOSClicked'});
             //window.location.href = "https://apps.apple.com/us/app/zomo-fit-creator/id1513006436?utm_source=LandingPage"
            
         }
         function clickedAndroidDownload(e) {
            // e.preventDefault();
-           ga('send', 'event', 'UI', 'SignupFormSubmitted');
-            ga('send', 'event', 'UI', 'AndroidClicked');
+            gtag('event', 'SignupFormSubmitted', {'event_category' : 'UI',
+  'event_label' : 'SignupFormSubmitted'});
+            gtag('event', 'AndroidClicked', {'event_category' : 'UI',
+  'event_label' : 'AndroidClicked'});
             //window.location.href = "https://play.google.com/store/apps/details?id=com.zomo_fit&utm_source=LandingPage"
         }
         
+        /*
         close = document.getElementById("close_note");
  close.addEventListener('click', function() {
    note = document.getElementById("note");
    note.style.display = 'none';
- }, false);
+ }, false); */
     </script>
 
 </body>
