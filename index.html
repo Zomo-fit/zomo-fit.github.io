@@ -237,10 +237,12 @@ src="https://www.facebook.com/tr?id=1383314162006178&ev=PageView&noscript=1"
 
     <script>
         function clickedAppleDownload() {
-           
+           ga('send', 'event', 'UI', 'SignupFormSubmitted');
+            ga('send', 'event', 'UI', 'iOSClicked');
         }
         function clickedAndroidDownload() {
-           
+           ga('send', 'event', 'UI', 'SignupFormSubmitted');
+            ga('send', 'event', 'UI', 'AndroidClicked');
         }
         
         close = document.getElementById("close_note");
