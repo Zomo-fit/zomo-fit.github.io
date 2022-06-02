@@ -154,7 +154,7 @@ src="https://www.facebook.com/tr?id=1383314162006178&ev=PageView&noscript=1"
 
                     <div fullwidth layout="row" layout-md="column" layout-align="start center">
                         <a href="https://apps.apple.com/us/app/zomo-fit-creator/id1513006436?utm_source=LandingPage"
-                            class="hero__download-now" onclick="return clickedAppleDownload();">
+                            class="hero__download-now" onclick="clickedAppleDownload();">
                             <div class="hero__download-btn-wrapper">
                                 <div class="hero__download-btn-shadow"></div>
                                 <div class="hero__download-btn" layout="row" layout-align="center center">
@@ -163,7 +163,7 @@ src="https://www.facebook.com/tr?id=1383314162006178&ev=PageView&noscript=1"
                             </div>
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=com.zomo_fit&utm_source=LandingPage"
-                            class="hero__download-now" onclick="return clickedAndroidDownload();">
+                            class="hero__download-now" onclick="clickedAndroidDownload();">
                             <div class="hero__download-btn-wrapper">
                                 <div class="hero__download-btn-shadow"></div>
                                 <div class="hero__download-btn" layout="row" layout-align="center center">
@@ -239,6 +239,7 @@ src="https://www.facebook.com/tr?id=1383314162006178&ev=PageView&noscript=1"
         function clickedAppleDownload() {
            ga('send', 'event', 'UI', 'SignupFormSubmitted');
             ga('send', 'event', 'UI', 'iOSClicked');
+           
         }
         function clickedAndroidDownload() {
            ga('send', 'event', 'UI', 'SignupFormSubmitted');
