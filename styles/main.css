@@ -259,6 +259,10 @@ p {
   .hero__logo-text {
     margin: 0 auto;
   }
+    
+    .hero__header {
+    padding-top: 20px;
+  }
 }
 
 .hero__header-link {
